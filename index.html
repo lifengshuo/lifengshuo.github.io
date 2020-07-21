@@ -172,7 +172,31 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>李姐美若天仙<br>李姐美若天仙<br>李姐美若天仙<br>李姐美若天仙<br>李姐美若天仙<br>李姐美若天仙</p>
+        <h1 id="搭建我的第一个人博客"><a href="#搭建我的第一个人博客" class="headerlink" title="搭建我的第一个人博客"></a><strong>搭建我的第一个人博客</strong></h1><h2 id="1-环境支持node，git"><a href="#1-环境支持node，git" class="headerlink" title="1. 环境支持node，git"></a>1. 环境支持node，git</h2><pre><code>nodejs下载地址：[nodejs](https://nodejs.org/en/ &quot;nojs下载地址&quot;)
+完成下载后查看版本：
+管理员身份运行cmd，输入node -v和npm -v</code></pre><h2 id="2-下载淘宝镜像"><a href="#2-下载淘宝镜像" class="headerlink" title="2. 下载淘宝镜像"></a>2. 下载淘宝镜像</h2><pre><code>npm install -g cnpm --registry=http://registry.npm.taobao.org</code></pre><h2 id="3-下载hexo"><a href="#3-下载hexo" class="headerlink" title="3. 下载hexo"></a>3. 下载hexo</h2><pre><code>cnpm install -g hexo-cli
+查看版本 hexo -v</code></pre><h2 id="4-初始化hexo"><a href="#4-初始化hexo" class="headerlink" title="4. 初始化hexo"></a>4. 初始化hexo</h2><pre><code>进入博客目录：cd C:\files\blog
+初始化：hexo init</code></pre><h2 id="5-启动hexo"><a href="#5-启动hexo" class="headerlink" title="5. 启动hexo"></a>5. 启动hexo</h2><pre><code>hexo s
+访问localhost：4000即可看到全新的hexo
+ctrl+c退出</code></pre><h2 id="6-新建博客"><a href="#6-新建博客" class="headerlink" title="6. 新建博客"></a>6. 新建博客</h2><pre><code>hexo n ”博客名“</code></pre><h2 id="7-测试"><a href="#7-测试" class="headerlink" title="7. 测试"></a>7. 测试</h2><pre><code>hexo clean
+hexo g
+hexo s
+执行完上述三个命令即可在4000端口看到自己新写的博客</code></pre><h2 id="8-推送到我的git"><a href="#8-推送到我的git" class="headerlink" title="8. 推送到我的git"></a>8. 推送到我的git</h2><pre><code>1.部署：
+进入我的github，右上角加号，点击new reposiory，
+repositoy name：”github昵称“.github.io,创建。
+安装部署插件：cnpm install --save hexo-deployer-git
+
+2.推送：
+hexo d
+
+注：在推送前输入
+git config --global user.email &quot;you@example.com&quot;
+git config --global user.name &quot;Your Name&quot;
+否则会报错，第一次推送需要输入github账号和密码
+
+3.查看：
+访问我的博客地址：lifengshuo.github.io</code></pre><hr>
+<p>###主题样式日后完善</p>
 
       
 
